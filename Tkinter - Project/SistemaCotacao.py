@@ -87,7 +87,7 @@ combobox_selecionarmoeda.grid(row=1, column=2, padx=10, pady=10, sticky='nsew')
 label_selecionardia = tk.Label(text="Selecione o dia que deseja pegar a cotação", anchor='e')
 label_selecionardia.grid(row=2, column=0, padx=10, pady=10, sticky='nswe', columnspan=2)
 
-calendario_moeda = DateEntry(year=2021, locale='pt_br')
+calendario_moeda = DateEntry(year=2023, locale='pt_br')
 calendario_moeda.grid(row=2, column=2, padx=10, pady=10, sticky='nsew')
 
 label_textocotacao = tk.Label(text="")
