@@ -35,10 +35,9 @@ def selecionar_arquivo():
 
 def atualizar_cotacoes():
     try:
-        # ler o dataframe de moedas
         df = pd.read_excel(var_caminhoarquivo.get())
         moedas = df.iloc[:, 0]
-        # pegar a data de inicio e data de fim das cotacoes
+
         data_inicial = calendario_datainicial.get()
         data_final = calendario_datafinal.get()
         ano_inicial = data_inicial[-4:]
@@ -97,7 +96,6 @@ botao_pegarcotacao = tk.Button(text="Pegar Cotação", command=pegar_cotacao)
 botao_pegarcotacao.grid(row=3, column=2, padx=10, pady=10, sticky='nsew')
 
 
-# cotação de várias moedas
 
 label_cotacavariasmoedas = tk.Label(text="Cotação de Múltiplas Moedas", borderwidth=2, relief='solid')
 label_cotacavariasmoedas.grid(row=4, column=0, padx=10, pady=10, sticky='nswe', columnspan=3)
